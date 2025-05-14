@@ -44,14 +44,15 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Set your GitHub Models token
-export GITHUB_TOKEN=your_token_here
+# Create a .env file and set your GitHub Models token
+echo "GITHUB_TOKEN=your_token_here" > .env
 
 # Run the app
 python app.py
-```
 
-Then open `http://localhost:8000` in your browser.
+```
+Then open http://localhost:8000 in your browser.
+
 
 ## ✨ Built with
 
