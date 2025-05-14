@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Great Questions at Build 2025</title>
+</head>
+<body>
+    <h1>Ask Great Questions at Build 2025</h1>
+    <form method="POST">
+        <label for="description">Describe the person:</label><br>
+        <input type="text" id="description" name="description" required><br><br>
+        <button type="submit">Get a Question</button>
+    </form>
+    {% if question %}
+        <div>
+            <h2>Suggested Question:</h2>
+            <p>{{ question }}</p>
+        </div>
+    {% endif %}
+</body>
+</html>
