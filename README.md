@@ -6,7 +6,7 @@ Just describe something about a person — their shirt, job, or vibe — and get
 
 ## 🚀 Try it live
 
-👉 \[Insert live demo link here]
+👉 https://build-convo-openers-582346dd78f4.herokuapp.com/
 
 ## 🛠 How it works
 
