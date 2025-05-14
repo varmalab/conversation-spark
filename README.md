@@ -1,8 +1,8 @@
-Here’s a polished, conference-friendly `README.md` for your **`conversation-spark-at-Build`** repo:
+Here’s a polished, conference-friendly `README.md` for your **`build-2025-conversation-openers`** repo:
 
 ---
 
-# 🧠 conversation-spark-at-Build
+# 🧠 build-2025-conversation-openers
 
 A playful chat app built with [GitHub Models](https://docs.github.com/en/github-models) to help you spark better conversations at Microsoft Build.
 
@@ -34,8 +34,8 @@ Just describe something about a person — their shirt, job, or vibe — and get
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR-USERNAME/conversation-spark-at-Build.git
-cd conversation-spark-at-Build
+git clone https://github.com/YOUR-USERNAME/build-2025-conversation-openers.git
+cd build-2025-conversation-openers
 
 # Set up a virtual environment
 python -m venv venv

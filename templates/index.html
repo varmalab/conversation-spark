@@ -3,20 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ask Great Questions at Build 2025</title>
+    <title>Build 2025 Conversation Openers</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg" type="image/svg+xml">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --github-green: #08872B;
+            --github-hover-green: #104C35;
+            --github-purple: #501DAF;
+            --github-light-purple: #C06EFF;
+            --github-light-gray: #F6F8FA;
+            --github-dark-gray: #24292f;
+            --github-light-green: #BFFFD1;
+        }
+        body {
+            background-color: var(--github-light-gray);
+        }
+        .text-primary {
+            color: var(--github-purple) !important;
+        }
+        .btn-primary {
+            background-color: var(--github-green);
+            border-color: var(--github-green);
+            font-weight: bold;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: var(--github-hover-green);
+            border-color: var(--github-hover-green);
+        }
+        .form-control {
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+        }
+        .alert-success {
+            background-color: var(--github-light-green);
+            border: none;
+            color: var(--github-dark-gray);
+        }
+        .alert-success strong {
+            color: var(--github-hover-green);
+        }
+        .result-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            color: var(--github-dark-gray);
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: var(--github-light-purple);
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Ask Great Questions at Build 2025</h1>
-    <form method="POST">
-        <label for="description">Describe the person:</label><br>
-        <input type="text" id="description" name="description" required><br><br>
-        <button type="submit">Get a Question</button>
-    </form>
-    {% if question %}
-        <div>
-            <h2>Suggested Question:</h2>
-            <p>{{ question }}</p>
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 text-primary">🧠 Build 2025 Conversation Openers</h1>
+            <p class="lead text-secondary">Spark better conversations with thoughtful, fun, and curious questions.</p>
         </div>
-    {% endif %}
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <form method="POST" class="mb-4">
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Describe something about the person:</label>
+                        <textarea class="form-control" id="description" name="description" rows="3" placeholder="e.g., They're wearing a NASA shirt"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Generate Question</button>
+                </form>
+                {% if question %}
+                <div class="alert alert-success">
+                    <strong>Suggested Question:</strong>
+                    <div class="result-card mt-2">
+                        {{ question }}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <footer class="text-center mt-5">
+            <small>Built with ❤️ and powered by <a href="https://docs.github.com/en/github-models" target="_blank">GitHub Models</a></small>
+        </footer>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

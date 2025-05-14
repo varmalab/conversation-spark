@@ -7,7 +7,7 @@ from azure.core.credentials import AzureKeyCredential
 
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask("Build 2025 Conversation Openers")  # Updated app name
 
 # GitHub Models API setup
 endpoint = "https://models.github.ai/inference"
