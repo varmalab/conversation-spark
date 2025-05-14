@@ -1,8 +1,4 @@
-Here’s a polished, conference-friendly `README.md` for your **`build-2025-conversation-openers`** repo:
-
----
-
-# 🧠 build-2025-conversation-openers
+# Build 2025 Conversation Openers AI Helper
 
 A playful chat app built with [GitHub Models](https://docs.github.com/en/github-models) to help you spark better conversations at Microsoft Build.
 
