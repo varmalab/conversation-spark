@@ -1,3 +1,5 @@
+name: Experimental New Product
+description: Helps you break the ice with someone based on job title
 messages:
   - role: system
     content: >-
