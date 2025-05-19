@@ -30,8 +30,8 @@ Just describe something about a person — their shirt, job, or vibe — and get
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR-USERNAME/build-2025-conversation-openers.git
-cd build-2025-conversation-openers
+git clone https://github.com/contoso/conversation-spark.git
+cd conversation-spark
 
 # Set up a virtual environment
 python -m venv venv
