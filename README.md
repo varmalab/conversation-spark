@@ -11,7 +11,7 @@ Just describe something about a person — their shirt, job, or vibe — and get
 ## 🛠 How it works
 
 * Built using Python (Flask/FastAPI) with a simple HTML frontend
-* Calls the [GitHub Models API](https://docs.github.com/en/github-models) under the hood
+* Calls the [GitHub Models API](https://docs.github.com/en/rest/models/inference) under the hood
 * You input a short phrase (e.g. *"they're wearing a NASA shirt"*)
 * The model returns a natural-sounding question you can ask that person
 
