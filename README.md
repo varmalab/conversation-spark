@@ -6,7 +6,7 @@ Just describe something about a person — their shirt, job, or vibe — and get
 
 ## 🚀 Try it live
 
-👉 https://build-convo-openers-582346dd78f4.herokuapp.com/
+👉 https://gh.io/models2025builddemo
 
 ## 🛠 How it works
 
@@ -59,4 +59,3 @@ Then open http://localhost:8000 in your browser.
 ## 💬 Made by
 
 Built by [@katecatlin](https://github.com/katecatlin) and [@damovisa](https://github.com/damovisa) for Microsoft Build 2025. Enjoy it, remix it, and talk to strangers better ✨
-
