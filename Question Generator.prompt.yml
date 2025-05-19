@@ -1,3 +1,5 @@
+name: Question prompter
+description: Suggests a great conversation starter
 messages:
   - role: system
     content: >-
@@ -7,3 +9,19 @@ messages:
   - role: user
     content: '{{input}}'
 model: openai/gpt-4o
+modelParameters:
+  temperature: 0.5
+testData:
+  - input: |
+      She’s carrying a mechanical keyboard
+    expected: What’s your favorite key switch? This feels like a niche passion.
+  - input: |
+      He's in a dinosaur costume
+    expected: Is this a personal brand thing, or just a really strong Thursday energy?
+  - input: |
+      They’re sketching in a notebook
+    expected: I’m curious — is that journaling, drawing, or something totally secret?
+evaluators:
+  - name: Output should be a question
+    string:
+      contains: '?'
