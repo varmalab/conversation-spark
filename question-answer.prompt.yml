@@ -13,3 +13,9 @@ messages:
       on a tidbit about the other human entered below.
   - role: user
     content: '{{input}}'
+testData:
+  - input: She is always cooking Indian food
+    expected: ''
+  - input: She is always serious
+    expected: ''
+evaluators: []
